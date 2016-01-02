@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
 	spec.authors       = ["Butch Marshall"]
 	spec.email         = ["butch.a.marshall@gmail.com"]
 	spec.summary       = "Jive AddOn functionality implemented using ActiveRecord."
-	spec.description   = "Implements the functionality required for dealing with and storing Jive AddOns using ActiveRecord as a storage backend.}"
+	spec.description   = "Implements the functionality required for dealing with and storing Jive AddOns using ActiveRecord as a storage backend."
 	spec.homepage      = "https://github.com/butchmarshall/ruby-jive-add_on"
 	spec.license       = "MIT"
 
