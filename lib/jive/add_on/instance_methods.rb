@@ -1,8 +1,9 @@
 module Jive
 	class AddOn < ActiveRecord::Base
-		class Model < ActiveRecord::Base
-			self.table_name = :jive_add_ons
-			validate :validate_registration
+		module InstanceMethods
+			def self.included(base)
+				base.table_name = :jive_add_ons
+			end
 
 			private
 				def validate_registration

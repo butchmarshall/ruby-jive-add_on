@@ -1,5 +1,7 @@
+require "active_record"
+
 module Jive
-	module AddOn
-		VERSION = "0.0.1"
+	class AddOn < ActiveRecord::Base
+		VERSION = "0.0.2"
 	end
 end

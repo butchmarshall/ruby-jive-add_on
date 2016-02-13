@@ -6,6 +6,9 @@ require 'jive/add_on'
 
 require 'database_cleaner'
 
+require 'webmock/rspec'
+WebMock.disable_net_connect!(allow_localhost: true)
+
 # Trigger AR to initialize
 ActiveRecord::Base
 

@@ -6,13 +6,13 @@ require "jive/signed_request"
 
 require "jive/add_on/version"
 require "jive/add_on/compatibility"
-require "jive/add_on/model"
+require "jive/add_on/class_methods"
+require "jive/add_on/instance_methods"
 
 module Jive
-	module AddOn
+	class AddOn < ActiveRecord::Base
 	end
-	#def AddOn
-	#	Jive::AddOn::Model
-	#end
-	#module_function :AddOn
 end
+
+Jive::AddOn.send :include, Jive::AddOn::InstanceMethods
+Jive::AddOn.send :extend, Jive::AddOn::ClassMethods

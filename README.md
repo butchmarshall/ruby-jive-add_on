@@ -32,7 +32,7 @@ rails generate jive:add_on:active_record
 To the ActiveRecord model:
 
 ```ruby
-Jive::AddOn::Model.new(...)
+Jive::AddOn.new(...)
 ```
 
 ## Contributing

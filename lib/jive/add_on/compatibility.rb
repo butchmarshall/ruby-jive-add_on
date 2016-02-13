@@ -1,7 +1,7 @@
 require 'jive/add_on/version'
 
 module Jive
-	module AddOn
+	class AddOn < ActiveRecord::Base
 		module Compatibility
 			if ActiveSupport::VERSION::MAJOR >= 4
 				require 'active_support/proxy_object'
